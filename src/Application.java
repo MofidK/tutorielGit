@@ -18,6 +18,15 @@ public class Application extends Frame {
 		this.add(vue);
 		this.pack();
 		this.setVisible(true);
+		
+		 
+		this.addWindowListener(new java.awt.event.WindowAdapter() {
+		        public void windowClosing(java.awt.event.WindowEvent evt) {
+		                dispose();
+		                System.exit(0);
+		        } 
+		} );
+
 	}
 
 }
